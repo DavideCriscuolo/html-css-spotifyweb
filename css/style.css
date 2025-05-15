@@ -56,6 +56,11 @@
       height: 100%;
       width: 230px;
       padding: 10px;
+      .logo {
+        .hide_sm {
+          display: none;
+        }
+      }
       .link_and_icon_sidebar {
         svg {
           height: 24px;
@@ -204,6 +209,14 @@
   .container_wrapper {
     .top {
       .sidebar {
+        .logo {
+          .sm_none {
+            display: none;
+          }
+          .hide_sm {
+            display: inline-block;
+          }
+        }
         width: 50px;
         .mobile_none {
           display: none;
