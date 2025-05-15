@@ -20,6 +20,25 @@
           background-color: orange;
           border: 2px dashed red;
         }
+        .list_links {
+          background-color: crimson;
+          border: 2px dashed black;
+          height: 50px;
+        }
+        .row {
+          .title_row {
+            border: 2px dashed black;
+          }
+          .cards {
+            background-color: lightgreen;
+            border: 2px dashed black;
+            .card {
+              height: 180px;
+
+              border: 2px dashed black;
+            }
+          }
+        }
       }
     }
     .bottom {
@@ -43,6 +62,13 @@
     }
     .main_content {
       width: calc(100% - 230px);
+
+      .cards {
+        display: flex;
+        .card {
+          width: calc(100% / 12 * 2);
+        }
+      }
       .hader_content {
         height: 90px;
         position: sticky;
@@ -62,8 +88,17 @@
       .sidebar {
         width: 50px;
       }
+
       .main_content {
         width: calc(100% - 50px);
+        .row {
+          .cards {
+            flex-wrap: wrap;
+            .card {
+              width: calc(100% / 12 * 6);
+            }
+          }
+        }
       }
     }
   }
