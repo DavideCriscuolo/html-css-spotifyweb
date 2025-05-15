@@ -57,6 +57,7 @@
     height: calc(100% - 70px);
     overflow: auto;
     .sidebar {
+      position: relative;
       height: 100%;
       width: 230px;
       padding: 10px;
@@ -68,6 +69,60 @@
         }
         .home_link {
           padding: 10px 0px 10px 0px;
+        }
+      }
+      .section_playlist {
+        padding: 10px 0px 0px 0px;
+        .link_add_playlist {
+          span {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background: gray;
+            font-size: 30px;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+          ul {
+            list-style: none;
+            li {
+              padding: 10px 0px 0px 0px;
+              a {
+                text-decoration: none;
+                color: grey;
+              }
+            }
+          }
+        }
+      }
+      .section_download {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+
+        .download {
+          padding-bottom: 50px;
+          padding-left: 10px;
+          svg {
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+          }
+        }
+      }
+      .section_user {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        .user {
+          padding-bottom: 50px;
+          padding-left: 10px;
+          svg {
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+          }
         }
       }
     }
