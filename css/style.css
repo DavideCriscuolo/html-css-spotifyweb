@@ -4,6 +4,43 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: blue;
+.debug {
+  .container_wrapper {
+    .top {
+      background-color: purple;
+      border: 2px dashed red;
+      .sidebar {
+        background-color: brown;
+        border: 2px dashed red;
+      }
+      .main_content {
+        background-color: yellow;
+        border: 2px dashed red;
+      }
+    }
+    .bottom {
+      background-color: aquamarine;
+      border: 2px dashed red;
+    }
+  }
+}
+
+.container_wrapper {
+  width: 100%;
+  height: 100vh;
+
+  .top {
+    display: flex;
+    height: calc(100% - 70px);
+    .sidebar {
+      height: 100%;
+      width: 230px;
+    }
+    .main_content {
+      width: calc(100% - 230px);
+    }
+  }
+  .bottom {
+    height: 70px;
+  }
 }
