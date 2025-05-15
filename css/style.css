@@ -116,7 +116,7 @@
         left: 0%;
         bottom: 0%;
         .user {
-          padding-bottom: 50px;
+          padding-bottom: 10px;
           padding-left: 10px;
           svg {
             height: 24px;
@@ -153,6 +153,9 @@
     .top {
       .sidebar {
         width: 50px;
+        .mobile_none {
+          display: none;
+        }
       }
 
       .main_content {
