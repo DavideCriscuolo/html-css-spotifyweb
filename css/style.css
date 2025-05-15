@@ -32,6 +32,7 @@
   .top {
     display: flex;
     height: calc(100% - 70px);
+    overflow: auto;
     .sidebar {
       height: 100%;
       width: 230px;
@@ -42,5 +43,18 @@
   }
   .bottom {
     height: 70px;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .container_wrapper {
+    .top {
+      .sidebar {
+        width: 50px;
+      }
+      .main_content {
+        width: calc(100% - 50px);
+      }
+    }
   }
 }
