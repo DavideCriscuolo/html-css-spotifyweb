@@ -16,6 +16,10 @@
       .main_content {
         background-color: yellow;
         border: 2px dashed red;
+        .hader_content {
+          background-color: orange;
+          border: 2px dashed red;
+        }
       }
     }
     .bottom {
@@ -39,6 +43,9 @@
     }
     .main_content {
       width: calc(100% - 230px);
+      .hader_content {
+        height: 90px;
+      }
     }
   }
   .bottom {
