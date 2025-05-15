@@ -23,7 +23,6 @@
         .list_links {
           background-color: crimson;
           border: 2px dashed black;
-          height: 50px;
         }
         .row {
           .title_row {
@@ -147,7 +146,29 @@
           border: 1px solid white;
           padding: 10px 20px;
           border-radius: 30px;
-          color: white;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      .list_links {
+        padding: 10px 0px;
+        ul {
+          height: 100%;
+          display: flex;
+          list-style: none;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          li {
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
         }
       }
     }
