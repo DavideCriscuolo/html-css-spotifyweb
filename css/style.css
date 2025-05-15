@@ -59,6 +59,17 @@
     .sidebar {
       height: 100%;
       width: 230px;
+      padding: 10px;
+      .link_and_icon_sidebar {
+        svg {
+          height: 24px;
+          width: 24px;
+          vertical-align: middle;
+        }
+        .home_link {
+          padding: 10px 0px 10px 0px;
+        }
+      }
     }
     .main_content {
       width: calc(100% - 230px);
