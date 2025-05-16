@@ -288,6 +288,9 @@ body {
             position: relative;
             top: 0;
             left: 0;
+            .retro {
+              display: none;
+            }
           }
           .img_album img {
             width: 100%;
@@ -317,10 +320,21 @@ body {
         .play_h {
           display: none;
         }
+        .card:hover {
+          transform: scale(1, 1.01);
+
+          .retro {
+            display: block;
+            img {
+              width: 100%;
+            }
+          }
+          .front_img {
+            display: none;
+          }
+        }
       }
-      .cards .card:hover {
-        transform: scale(1, 1.01);
-      }
+
       .cards:hover > .card:not(:hover) {
         filter: blur(10px);
         transform: scale(0.8, 0.8);
