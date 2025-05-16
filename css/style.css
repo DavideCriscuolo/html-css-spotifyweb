@@ -82,8 +82,19 @@ body {
               fill: grey;
             }
           }
+          a:hover {
+            color: white;
+            path {
+              fill: white;
+            }
+          }
         }
+        .home_link:hover {
+          border-left: 2px solid limegreen;
+        }
+
         .serch_link {
+          padding: 10px 0px 10px 0px;
           a {
             text-decoration: none;
             color: grey;
@@ -91,8 +102,19 @@ body {
               fill: grey;
             }
           }
+          a:hover {
+            color: white;
+            path {
+              fill: white;
+            }
+          }
         }
+        .serch_link:hover {
+          border-left: 2px solid limegreen;
+        }
+
         .library_link {
+          padding: 10px 0px 10px 0px;
           a {
             text-decoration: none;
             color: gray;
@@ -100,6 +122,20 @@ body {
               fill: grey;
             }
           }
+          a:hover {
+            color: white;
+            path {
+              fill: white;
+            }
+          }
+        }
+        /* .library_link:hover {
+          border-left: 2px solid limegreen;
+          Possiamo usare anche un hover per dare un effte al pasaggio e non al click
+        } */
+
+        .library_link:active {
+          border-left: 2px solid limegreen;
         }
       }
       .section_playlist {
@@ -125,6 +161,9 @@ body {
                 text-decoration: none;
                 color: grey;
               }
+              a:hover {
+                color: white;
+              }
             }
           }
         }
@@ -137,6 +176,13 @@ body {
             height: 24px;
             width: 24px;
             vertical-align: middle;
+          }
+          a {
+            text-decoration: none;
+            color: grey;
+          }
+          a:hover {
+            color: white;
           }
         }
       }
@@ -151,6 +197,13 @@ body {
             background-color: gray;
 
             border-radius: 50%;
+          }
+          a {
+            text-decoration: none;
+            color: grey;
+          }
+          a:hover {
+            color: white;
           }
         }
       }
@@ -176,8 +229,15 @@ body {
         border-radius: 30px;
 
         a {
-          color: white;
+          color: gray;
           text-decoration: none;
+        }
+      }
+      .txt_header:hover {
+        border-color: limegreen;
+        transform: scale(1.25);
+        a:hover {
+          color: white;
         }
       }
     }
