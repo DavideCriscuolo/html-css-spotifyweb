@@ -38,7 +38,9 @@
     }
   }
 }
-
+body {
+  font-family: "Montserrat", sans-serif;
+}
 .container_wrapper {
   width: 100%;
   height: 100vh;
@@ -69,10 +71,35 @@
           margin-top: 5px;
           height: 24px;
           width: 24px;
-          vertical-align: middle;
+          vertical-align: bottom;
         }
         .home_link {
           padding: 10px 0px 10px 0px;
+          a {
+            text-decoration: none;
+            color: grey;
+            path {
+              fill: grey;
+            }
+          }
+        }
+        .serch_link {
+          a {
+            text-decoration: none;
+            color: grey;
+            path {
+              fill: grey;
+            }
+          }
+        }
+        .library_link {
+          a {
+            text-decoration: none;
+            color: gray;
+            path {
+              fill: grey;
+            }
+          }
         }
       }
       .section_playlist {
