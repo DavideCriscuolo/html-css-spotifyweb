@@ -203,6 +203,7 @@
   .bottom {
     height: 70px;
     .container_bottom {
+      padding: 0px 5px 0px 5px;
       height: 100%;
       display: flex;
       align-items: center;
@@ -210,6 +211,7 @@
       .song {
         height: 100%;
         display: flex;
+        width: calc(100% / 12 * 4);
         .img_song_desc {
           display: flex;
           align-items: center;
@@ -222,6 +224,42 @@
           .text_bottom {
             padding: 0px 5px 0px 5px;
           }
+        }
+      }
+      .player {
+        width: calc(100% / 12 * 4);
+        text-align: center;
+        i {
+          font-size: 20px;
+        }
+
+        .player_bottom {
+          padding: 0px 0px 10px 0px;
+          display: flex;
+          align-items: center;
+
+          span {
+            padding: 0px 5px 0px 5px;
+          }
+
+          .barra {
+            height: 5px;
+            width: 100%;
+            background-color: blue;
+          }
+        }
+      }
+      .controls {
+        width: calc(100% / 12 * 4);
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .barra {
+          height: 5px;
+          width: 20%;
+          background-color: blue;
         }
       }
       i {
