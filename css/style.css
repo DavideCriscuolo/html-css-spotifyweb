@@ -280,7 +280,11 @@ body {
         .card {
           padding: 10px;
           width: calc(100% / 12 * 2);
-
+          .img_album {
+            position: relative;
+            top: 0;
+            left: 0;
+          }
           .img_album img {
             width: 100%;
           }
@@ -304,6 +308,28 @@ body {
             font-weight: 600;
             padding-top: 10px;
             text-align: center;
+          }
+        }
+        .play_h {
+          display: none;
+        }
+        .card:hover {
+          .play_h {
+            font-size: 59px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            a {
+              color: white;
+            }
+          }
+          .img_album {
+            img {
+              opacity: 0.33;
+            }
           }
         }
       }
@@ -361,6 +387,9 @@ body {
           padding: 10px 0px 5px 0px;
           i {
             font-size: 20px;
+          }
+          .fa-circle-play {
+            font-size: 30px;
           }
           i:hover {
             transform: scale(1.15);
