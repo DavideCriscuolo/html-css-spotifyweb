@@ -268,7 +268,12 @@ body {
     }
     .row {
       .title_row {
-        color: black;
+        font-size: 35px;
+        color: white;
+        padding: 10px;
+      }
+      .suggestions {
+        padding: 10px;
       }
       .cards {
         display: flex;
@@ -280,10 +285,13 @@ body {
             width: 100%;
           }
           .title_album {
+            font-size: 16px;
+            font-weight: 600;
             padding-top: 10px;
             text-align: center;
           }
           .sottotitolo {
+            color: grey;
             padding-top: 10px;
             text-align: center;
           }
@@ -292,6 +300,8 @@ body {
             border-radius: 50%;
           }
           .title_artist {
+            font-size: 16px;
+            font-weight: 600;
             padding-top: 10px;
             text-align: center;
           }
@@ -328,6 +338,16 @@ body {
           }
           .icon_lef_bottom {
             display: flex;
+            color: grey;
+            i:hover {
+              transform: scale(1.15);
+            }
+            .heart:hover {
+              color: red;
+            }
+            .folder:hover {
+              color: limegreen;
+            }
           }
         }
       }
@@ -336,11 +356,15 @@ body {
         text-align: center;
         flex-shrink: 0;
         text-align: center;
-        i {
-          font-size: 20px;
-        }
+
         .player_top {
           padding: 10px 0px 5px 0px;
+          i {
+            font-size: 20px;
+          }
+          i:hover {
+            transform: scale(1.15);
+          }
         }
 
         .player_bottom {
@@ -385,7 +409,9 @@ body {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-
+        i:hover {
+          transform: scale(1.15);
+        }
         .barra_volum {
           height: 5px;
           width: 30%;
