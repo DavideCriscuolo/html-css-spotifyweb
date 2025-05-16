@@ -202,6 +202,27 @@
   }
   .bottom {
     height: 70px;
+    .container_bottom {
+      display: flex;
+      justify-content: space-between;
+      .song {
+        height: 100%;
+        display: flex;
+        .img_song_desc {
+          display: flex;
+          align-items: center;
+          .img_song {
+            width: 42px;
+            img {
+              width: 100%;
+            }
+          }
+          .text_bottom {
+            padding: 0px 5px 0px 5px;
+          }
+        }
+      }
+    }
   }
 }
 
