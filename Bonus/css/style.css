@@ -317,25 +317,13 @@ body {
         .play_h {
           display: none;
         }
-        .card:hover {
-          .play_h {
-            font-size: 59px;
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            a {
-              color: white;
-            }
-          }
-          .img_album {
-            img {
-              opacity: 0.33;
-            }
-          }
-        }
+      }
+      .cards .card:hover {
+        transform: scale(1, 1.01);
+      }
+      .cards:hover > .card:not(:hover) {
+        filter: blur(10px);
+        transform: scale(0.8, 0.8);
       }
     }
   }
