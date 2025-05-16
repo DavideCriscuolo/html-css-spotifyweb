@@ -129,14 +129,15 @@ body {
             }
           }
         }
-        /* .library_link:hover {
-          border-left: 2px solid limegreen;
-          Possiamo usare anche un hover per dare un effte al pasaggio e non al click
-        } */
-
-        .library_link:active {
+        .library_link:hover {
           border-left: 2px solid limegreen;
         }
+
+        /* .library_link:active {
+          border-left: 2px solid limegreen;
+        } 
+          Possiamo usare anche active per dare il bordino sinistro verde al clicl del link
+          */
       }
       .section_playlist {
         padding: 10px 0px 0px 0px;
