@@ -203,7 +203,9 @@
   .bottom {
     height: 70px;
     .container_bottom {
+      height: 100%;
       display: flex;
+      align-items: center;
       justify-content: space-between;
       .song {
         height: 100%;
@@ -221,6 +223,9 @@
             padding: 0px 5px 0px 5px;
           }
         }
+      }
+      i {
+        padding: 0px 5px 0px 5px;
       }
     }
   }
