@@ -164,6 +164,9 @@ body {
               }
               a:hover {
                 color: white;
+                i {
+                  background-color: white;
+                }
               }
             }
           }
@@ -262,6 +265,7 @@ body {
           a:hover {
             color: white;
             border-bottom: 2px solid limegreen;
+            padding-bottom: 5px;
           }
         }
       }
@@ -386,6 +390,7 @@ body {
         .player_top {
           padding: 10px 0px 5px 0px;
           i {
+            padding: 0px 10px;
             font-size: 20px;
           }
           .fa-circle-play {
