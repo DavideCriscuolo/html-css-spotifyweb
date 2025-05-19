@@ -303,6 +303,23 @@ body {
           .title_desc {
             font-size: 50px;
           }
+          .collab {
+            padding: 20px 0px;
+          }
+          .player_head {
+            padding: 10px 0px;
+            font-size: 30px;
+
+            .fa-circle-play:hover {
+              color: limegreen;
+            }
+            .fa-shuffle:hover {
+              color: limegreen;
+            }
+            .fa-heart:hover {
+              color: red;
+            }
+          }
         }
       }
 
@@ -310,6 +327,43 @@ body {
         display: flex;
 
         .card {
+          padding: 10px;
+          width: calc(100% / 12 * 4);
+          .img_album {
+            position: relative;
+            top: 0;
+            left: 0;
+            .retro {
+              display: none;
+            }
+          }
+
+          .img_album img {
+            width: 100%;
+          }
+          .title_album {
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 10px;
+            text-align: center;
+          }
+          .sottotitolo {
+            color: grey;
+            padding-top: 10px;
+            text-align: center;
+          }
+          .img_artist img {
+            width: 100%;
+            border-radius: 50%;
+          }
+          .title_artist {
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 10px;
+            text-align: center;
+          }
+        }
+        .card_small {
           padding: 10px;
           width: calc(100% / 12 * 2);
           .img_album {
@@ -346,7 +400,6 @@ body {
             text-align: center;
           }
         }
-
         .play_h {
           display: none;
         }
@@ -391,6 +444,25 @@ body {
         filter: blur(10px);
         transform: scale(0.8, 0.8);
       } */
+
+      .durata {
+        text-align: center;
+        ul {
+          list-style: none;
+          li {
+            padding: 30px 0px;
+          }
+        }
+      }
+      .ascolti {
+        text-align: right;
+        ul {
+          list-style: none;
+          li {
+            padding: 30px 0px;
+          }
+        }
+      }
     }
   }
   .bottom {
@@ -540,6 +612,10 @@ body {
             flex-wrap: wrap;
             .card {
               width: calc(100% / 12 * 3);
+              .ascolti {
+                display: none;
+              }
+              .
             }
           }
         }
